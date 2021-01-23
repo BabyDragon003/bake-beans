@@ -18,16 +18,11 @@ const Wrapper = styled("div")(({ theme }) => ({
 }));
 
 export default function Header() {
-    const days = Math.floor((total / (1000 * 60 * 60 * 24)));
-    return {
-        total, hours, minutes, seconds, days
-    };
-  }
 
-  const startTimer = (e) => {
-      let { total, hours, minutes, seconds, days } = getTimeRemaining(e);
-      if (days == 0 && hours == 0 && minutes == 0 && seconds == 0) setOver(true);
-      else {
+  const Ref = useRef(null);
+  
+  // The state for our timer
+  const [timer, setTimer] = useState('0 D : 00 H : 00 M : 00 Sec');
           // update the timer
           // check if less than 10 then we need to 
           // add '0' at the begining of the variable

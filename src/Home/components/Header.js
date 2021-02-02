@@ -1,13 +1,8 @@
+import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 import logo from "../../assets/FullLogo.png";
 import Connect from "./Connect";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import React, { useState, useRef, useEffect } from 'react'
-
-const Wrapper = styled("div")(({ theme }) => ({
-  textAlign: "center",
-  paddingBottom: 24,
   [theme.breakpoints.down("md")]: {
     h5: {
       fontSize: 20,

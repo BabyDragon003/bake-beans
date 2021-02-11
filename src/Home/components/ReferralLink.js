@@ -13,22 +13,6 @@ const Input = styled("input")(({ theme }) => ({
   fontWeight: 300,
   padding: "10px 12px",
   borderRadius: 0,
-  border: "1px solid #555",
-  background: "white",
-  width: "100%",
-  outline: "none",
-  color: theme.palette.primary.main,
-}));
-
-export default function ReferralLink({ address }) {
-  const link = `${window.origin}?ref=${address}`;
-
-  return (
-    <CardWrapper>
-      <CardContent style={{ paddingLeft: 8, paddingRight: 8 }}>
-        <Typography gutterBottom variant="h5" textAlign="center">
-          Referral Link
-        </Typography>
         <Input value={address ? link : ""} readOnly />
         <Typography
           textAlign="center"

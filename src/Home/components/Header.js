@@ -18,27 +18,6 @@ const Wrapper = styled("div")(({ theme }) => ({
 }));
 
 export default function Header() {
-
-  const Ref = useRef(null);
-  
-  // The state for our timer
-  const [timer, setTimer] = useState('0 D : 00 H : 00 M : 00 Sec');
-  const [over, setOver] = useState(false);
-
-  const getTimeRemaining = (e) => {
-
-    let year = new Date().getFullYear();
-    // let difference = +new Date(Date.UTC(2022, 4, 12, 16, 0, 0)) - +new Date();
-    let difference = +new Date(Date.UTC(2022, 4, 12, 16, 0, 0)) - +new Date();  // just remember moth start from 0,1,2,3,
-
-    if (over == true || difference < 0) return {
-        total: 0, hours: 0, minutes: 0, seconds: 0, days: 0
-    };
-
-    const total = difference;
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
     const days = Math.floor((total / (1000 * 60 * 60 * 24)));
     return {
         total, hours, minutes, seconds, days

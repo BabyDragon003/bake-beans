@@ -23,22 +23,3 @@ export default function PriceInput({ value, max, onChange = () => {} }) {
   return (
     <Box position="relative">
       <BnbInput
-        type="number"
-        min={0}
-        max={max}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-      />
-      <Typography
-        fontSize={24}
-        position="absolute"
-        top={12}
-        right={18}
-        fontWeight={500}
-        color="black"
-      >
-        PSTN
-      </Typography>
-    </Box>
-  );
-}

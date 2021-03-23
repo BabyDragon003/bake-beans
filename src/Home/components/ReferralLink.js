@@ -1,13 +1,8 @@
+import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 
 import { styled } from "@mui/system";
-
-const CardWrapper = styled(Card)({
-  background: "#193d7d",
-});
-
-const Input = styled("input")(({ theme }) => ({
   fontSize: 10,
   fontWeight: 300,
   padding: "10px 12px",

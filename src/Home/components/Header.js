@@ -3,16 +3,11 @@ import { styled } from "@mui/system";
 import logo from "../../assets/FullLogo.png";
 import Connect from "./Connect";
 import Box from "@mui/material/Box";
-  [theme.breakpoints.down("md")]: {
-    h5: {
-      fontSize: 20,
-      margin: 0,
-    },
-  },
-}));
+import Button from "@mui/material/Button";
+import React, { useState, useRef, useEffect } from 'react'
 
-export default function Header() {
-
+const Wrapper = styled("div")(({ theme }) => ({
+  textAlign: "center",
   const Ref = useRef(null);
   
   // The state for our timer

@@ -8,17 +8,6 @@ const BnbInput = styled("input")({
   padding: "12px 90px 12px 16px",
   textAlign: "right",
   borderRadius: 0,
-  border: "1px solid #555",
-  background: "white",
-  width: "100%",
-  outline: "none",
-  "&::-webkit-outer-spin-button, &::-webkit-inner-spin-button": {
-    WebkitAppearance: "none",
-    margin: 0,
-    MozAppearance: "textfield",
-  },
-});
-
 export default function PriceInput({ value, max, onChange = () => {} }) {
   return (
     <Box position="relative">

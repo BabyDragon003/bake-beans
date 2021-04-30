@@ -8,26 +8,16 @@ const theme = createTheme({
     secondary: {
       main: "#f4b52d",
     },
-    },
-    allVariants: {
-      color: "#ffffff",
-    },
-    h4: {
-      fontWeight: 600,
-      fontSize: 32,
-    },
-    h5: {
-      fontSize: 24,
-      fontWeight: 500,
+    text: {
+      primary: "#17215E",
     },
   },
-  components: {
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          boxShadow: "6px 6px 20px 6px #00000096",
-          borderRadius: 20,
-        },
+  typography: {
+    fontFamily: "Montserrat",
+    body1: {
+      fontSize: 20,
+    },
+    body2: {
       },
     },
     MuiCardContent: {

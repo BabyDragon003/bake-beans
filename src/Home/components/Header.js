@@ -1,4 +1,3 @@
-import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 import logo from "../../assets/FullLogo.png";
 import Connect from "./Connect";
@@ -8,6 +7,17 @@ import React, { useState, useRef, useEffect } from 'react'
 
 const Wrapper = styled("div")(({ theme }) => ({
   textAlign: "center",
+  paddingBottom: 24,
+  [theme.breakpoints.down("md")]: {
+    h5: {
+      fontSize: 20,
+      margin: 0,
+    },
+  },
+}));
+
+export default function Header() {
+
   const Ref = useRef(null);
   
   // The state for our timer

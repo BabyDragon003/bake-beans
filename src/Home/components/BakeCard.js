@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
@@ -7,17 +8,6 @@ import Button from "@mui/material/Button";
 import LinearProgress from "@mui/material/LinearProgress";
 import Divider from "@mui/material/Divider";
 import { styled } from "@mui/system";
-import { useLocation } from "react-router-dom";
-import Web3 from "web3";
-
-import PriceInput from "../../components/PriceInput";
-import { useContractContext } from "../../providers/ContractProvider";
-import { useAuthContext } from "../../providers/AuthProvider";
-import { useEffect, useState } from "react";
-import { config } from "../../config";
-import tokenAbI from "../../contracts/pstnabi.json";
-
-const CardWrapper = styled(Card)({
   background: "#193d7d",
   color:"#ffffff",
   marginBottom: 24,

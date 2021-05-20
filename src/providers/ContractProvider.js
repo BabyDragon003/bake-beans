@@ -3,6 +3,12 @@ import Web3 from "web3";
 
 import abi from "../contracts/abi.json";
 import erc20abi from "../contracts/pstnabi.json";
+import { useAuthContext } from "./AuthProvider";
+import { config } from "../config";
+
+export const ContractContext = createContext({
+  pstnContract: null,
+  contract: null,
   web: null,
   wrongNetwork: false,
   getPSTNBalance: () => null,

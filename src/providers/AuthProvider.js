@@ -8,17 +8,6 @@ import {
 import Web3 from "web3";
 import Web3Modal from "web3modal";
 import WalletConnectProvider from "@walletconnect/web3-provider";
-import Snackbar from "@mui/material/Snackbar";
-import MuiAlert from "@mui/material/Alert";
-
-export const AuthContext = createContext({
-  address: null,
-  connect: () => null,
-  loading: false,
-  disconnect: () => null,
-  chainId: null,
-  setSnackbar: () => null,
-});
 
 const providerOptions = {
   walletconnect: {
